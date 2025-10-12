@@ -18,33 +18,32 @@ Logistic Regression is a fundamental binary classification algorithm that models
 ### Logistic Function (Sigmoid)
 
 I learned that the heart of logistic regression is the sigmoid function, which maps any real number \(z\) (which is a linear combination of input features and model parameters) to a value between 0 and 1:
-\n
-<img width="249" height="199" alt="image" src="https://github.com/user-attachments/assets/f1a9dd81-277e-417c-af21-25aa1a2a6ade" />
-\n
-where\n
-<img width="208" height="83" alt="image" src="https://github.com/user-attachments/assets/c5e71dc1-b57a-4a78-abcc-94be033841a2" />
-\n
+
+<img width="249" height="199" alt="image" src="https://github.com/user-attachments/assets/f1a9dd81-277e-417c-af21-25aa1a2a6ade" /> <br>
+
+where 
+<img width="208" height="83" alt="image" src="https://github.com/user-attachments/assets/c5e71dc1-b57a-4a78-abcc-94be033841a2" /> <br>
+
 This output represents the probability of the input belonging to the positive class.
 
 ### Cost Function (Binary Cross-Entropy Loss)
 
 To measure how well the model fits the data, I implemented the binary cross-entropy loss function:
-\n
-<img width="734" height="94" alt="image" src="https://github.com/user-attachments/assets/66a9609d-9999-4f79-a974-c37fda2c24fe" />
-\n
+
+<img width="734" height="94" alt="image" src="https://github.com/user-attachments/assets/66a9609d-9999-4f79-a974-c37fda2c24fe" /> <br>
 
 This function heavily penalizes wrong predictions, guiding the model to improve.
 
 ### Gradients and Parameter Updates
 
 Through calculus, I derived the gradients of the cost function with respect to each parameter, which are necessary for gradient descent:
-\n
-<img width="370" height="207" alt="image" src="https://github.com/user-attachments/assets/2acd435b-5b04-4ec6-81fa-6acb68248311" />
-\n
+
+<img width="370" height="207" alt="image" src="https://github.com/user-attachments/assets/2acd435b-5b04-4ec6-81fa-6acb68248311" /> <br>
+
 
 Using these, I updated the parameters iteratively:
-\n
-<img width="257" height="167" alt="image" src="https://github.com/user-attachments/assets/c6334012-2e56-4fa8-a407-10941c11dc25" />
+
+<img width="257" height="167" alt="image" src="https://github.com/user-attachments/assets/c6334012-2e56-4fa8-a407-10941c11dc25" /> <br>
 
 where \(\alpha\) is the learning rate controlling the step size.
 
